@@ -1,0 +1,14 @@
+<?php
+/**
+ * Plugin Name: Read More
+ * Description: Hide additional content by wrapping content in an [expander_maker] shortcode.
+ * Version: 2.0.5
+ * Author: Edmon
+ * Author URI: 
+ * License: GPLv2
+ */
+
+require_once(dirname(__FILE__).'/config.php');
+require_once(YRM_CLASSES."ReadMoreInit.php");
+define("YRM_FOLDER_NAME",  dirname( plugin_basename(__FILE__) ));
+$readMoreObj = new ReadMoreInit();
